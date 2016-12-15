@@ -1,0 +1,2 @@
+<artist-widget [artist]="artist$ | async"></artist-widget>
+<album-widget *ngFor="let album of albums$ | async" [album]="album"></album-widget>

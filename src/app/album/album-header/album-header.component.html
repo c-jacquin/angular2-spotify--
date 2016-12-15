@@ -1,0 +1,15 @@
+<header class="album-header" *ngIf="!!album">
+    <div class="row">
+        <div class="col-md-4">
+            <div *ngIf="album.images.length > 0">
+                <img class="album-thumb" src="{{album.images[0].url}}">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h4 *ngIf="album.artists.length > 0"><span *ngFor="let artist of album.artists">
+            {{artist.name}}
+            </span></h4>
+            <h2>{{album.name}}</h2>
+        </div>
+    </div>
+</header>

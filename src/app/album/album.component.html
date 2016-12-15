@@ -1,0 +1,2 @@
+<album-header [album]="album$ | async"></album-header>
+<spotify-track *ngFor="let track of tracks$ | async" [track]="track"></spotify-track>

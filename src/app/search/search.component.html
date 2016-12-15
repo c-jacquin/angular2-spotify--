@@ -1,0 +1,10 @@
+<search-input (onNewSearch)="search($event)"></search-input>
+<span [hidden]="displaySpinner$ | async">Loading ...</span>
+<result-list
+  [results]="artists$ | async"
+  infinite-scroll
+  [infiniteScrollDistance]="500"
+  [infiniteScrollThrottle]="1000"
+  [infiniteScrollDisabled]="disableInfiniteScroll$ | async"
+  (scrolled)="onScroll()">
+></result-list>

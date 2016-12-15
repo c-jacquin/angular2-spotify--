@@ -1,0 +1,14 @@
+.album{
+    text-align: center;
+    background: #333;
+    padding: 10px 20px;
+    border:#666 1px solid;
+}
+
+.album-thumb{
+    width:100%;
+}
+
+.album-name {
+  height: 80px;
+}
